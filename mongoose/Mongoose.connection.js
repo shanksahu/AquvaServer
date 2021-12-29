@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 dotenv.config({path: "./config.env"})
 
-const database = mongoose.connect(process.env.DATABASELOCAL,{
+const database = mongoose.connect(process.env.DATABASE,{
     useNewUrlParser: true, useUnifiedTopology: true
 }).then(()=>{
         console.log("Database is connected");
